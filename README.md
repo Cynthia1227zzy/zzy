@@ -19,3 +19,9 @@ cat temp.html | grep -viE "(127.0.0.1 |::1) "       > ipaddresses.html
 echo $(date +"%d-%m-%Y %H:%M:%S %Z    %s") >>  ipaddresses.html
 cat /etc/machine-id >>  ipaddresses.html
 cat  ipaddresses.html 
+git status
+git add .
+git status
+git commit -m  'created ipaddress.html'
+git config   user.email "you@example.com"
+git config   user.name "Your Name"
